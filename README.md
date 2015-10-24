@@ -85,6 +85,8 @@ npm install bower -g
 npm install nodemon -g
 npm install
 bower install
+nodemon app.js
+
 
 
 ##other requirment
