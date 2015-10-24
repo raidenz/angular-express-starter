@@ -1,0 +1,19 @@
+{
+  "name": "angularseed",
+  "version": "1.0.0",
+  "homepage": "https://github.com/raidenz/angular-express-starter/find/master",
+  "authors": [
+    "raidenz <th.deny@gmail.com>"
+  ],
+  "description": "bower js location",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
