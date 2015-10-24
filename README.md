@@ -85,3 +85,10 @@ npm install bower -g
 npm install nodemon -g
 npm install
 bower install
+
+
+##other requirment
+
+maybe you need this
+npm install http -g
+npm install path -g
