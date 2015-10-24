@@ -66,9 +66,6 @@ Just fetch the changes and merge them into your project with git.
 
 
 
-## Example App
-
-A simple [blog](https://github.com/btford/angular-express-blog) based on this seed.
 
 
 ## Contact
@@ -79,3 +76,12 @@ your friends.
 
 ## License
 MIT
+
+
+## HOW ??
+
+A simple [blog](https://github.com/btford/angular-express-blog) based on this seed.
+npm install bower -g
+npm install nodemon -g
+npm install
+bower install
