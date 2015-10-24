@@ -4,17 +4,19 @@
  */
 
 var express = require('express'),
+  // connect = require('connect'), //midleware change //maybe unused
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
-  errorHandler = require('error-handler'),
+  errorHandler = require('express-error-handler'),
   morgan = require('morgan'),
   routes = require('./routes'),
   api = require('./routes/api'),
   http = require('http'),
-  path = require('path');
+  path = require('path'),
+  open = require("open");
 
 var app = module.exports = express();
-
+//var app = connect();
 
 /**
  * Configuration
@@ -25,15 +27,18 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(morgan('dev'));
-app.use(bodyParser());
+// app.use(bodyParser.urlencoded({ extended: true })); //untest
+app.use(bodyParser.json());
 app.use(methodOverride());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  app.use(express.errorHandler());
+  app.use(errorHandler({ dumpExceptions: true, showStack: true })); //new error handler
+  // app.use(errorHandler());
 }
 
 // production only
@@ -64,3 +69,4 @@ app.get('*', routes.index);
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
+// open("http://localhost:"+app.get('port'));
