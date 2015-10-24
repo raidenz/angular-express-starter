@@ -1,5 +1,8 @@
 node_modules
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7c7e25c8a5e52436686d4f454fc2dfd72e6ca36
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -42,4 +45,8 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+<<<<<<< HEAD
 .apdisk
+=======
+.apdisk
+>>>>>>> c7c7e25c8a5e52436686d4f454fc2dfd72e6ca36

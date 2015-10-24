@@ -12,8 +12,12 @@ var express = require('express'),
   routes = require('./routes'),
   api = require('./routes/api'),
   http = require('http'),
+<<<<<<< HEAD
   path = require('path'),
   open = require("open");
+=======
+  path = require('path');
+>>>>>>> c7c7e25c8a5e52436686d4f454fc2dfd72e6ca36
 
 var app = module.exports = express();
 //var app = connect();
@@ -69,4 +73,7 @@ app.get('*', routes.index);
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
+<<<<<<< HEAD
 // open("http://localhost:"+app.get('port'));
+=======
+>>>>>>> c7c7e25c8a5e52436686d4f454fc2dfd72e6ca36
